@@ -10,13 +10,13 @@ namespace PraktikaNORBIT_Collections
         private T[] _items;
         private int _count;
 
-        public SmartStack() 
-        { 
+        public SmartStack()
+        {
             _items = new T[4];
             _count = 0;
         }
 
-        public SmartStack(int capacity) 
+        public SmartStack(int capacity)
         {
             if (capacity <= 0)
                 throw new ArgumentException("Ёмкость должна быть положительной.");
@@ -43,7 +43,7 @@ namespace PraktikaNORBIT_Collections
         {
             if (_count == _items.Length)
             {
-                T[] newArray = new T[_count*2]; 
+                T[] newArray = new T[_count * 2];
                 Array.Copy(_items, newArray, _count);
                 _items = newArray;
             }
@@ -51,7 +51,7 @@ namespace PraktikaNORBIT_Collections
             _count++;
         }
 
-        public void PushRange (IEnumerable<T> collection)
+        public void PushRange(IEnumerable<T> collection)
         {
             if (collection == null) return;
 
@@ -61,7 +61,7 @@ namespace PraktikaNORBIT_Collections
                 int newCapacity = _items.Length;
                 while (newCapacity < _count + collection.Count())
                 {
-                    newCapacity *= 2;  
+                    newCapacity *= 2;
                 }
                 T[] newArray = new T[newCapacity];
                 Array.Copy(_items, newArray, _count);
@@ -70,7 +70,7 @@ namespace PraktikaNORBIT_Collections
 
             int index = _count + addCount - 1;
             foreach (T item in collection.Reverse())
-            { 
+            {
                 _items[index--] = item;
             }
             _count += addCount;
@@ -85,7 +85,7 @@ namespace PraktikaNORBIT_Collections
             _items[_count - 1] = default(T);
             _count--;
             return item;
-            
+
         }
 
         public T Peek()
@@ -105,9 +105,9 @@ namespace PraktikaNORBIT_Collections
             return false;
         }
 
-        public int Count 
-        { 
-            get { return _count; } 
+        public int Count
+        {
+            get { return _count; }
         }
 
         public int Capacity

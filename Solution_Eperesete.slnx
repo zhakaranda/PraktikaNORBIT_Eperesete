@@ -3,4 +3,5 @@
   <Project Path="PraktikaNORBIT_DataTypes_Zadanie1/PraktikaNORBIT_DataTypes_Zadanie1.csproj" Id="a9a9a484-033b-49ab-9a5f-f96d6edb4705" />
   <Project Path="PraktikaNORBIT_DataTypes_Zadanie2/PraktikaNORBIT_DataTypes_Zadanie2.csproj" Id="24714e8f-b42c-4bc1-8336-f1ef759e3745" />
   <Project Path="PraktikaNORBIT_OOP_Tema3/PraktikaNORBIT_OOP_Tema3.csproj" Id="6f813ce0-f6cb-42c5-8da2-bea9f8a68f7d" />
+  <Project Path="PraktikaNORBIT_UniversitySQL_DataBase/PraktikaNORBIT_UniversitySQL_DataBase.csproj" Id="107b4887-cb73-44f7-8db4-1601d958ab83" />
 </Solution>
